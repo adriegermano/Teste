@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: "Inter", sans-serif;
-    box-sizing: border-box; /* Essencial para o preenchimento lateral funcionar */
+    box-sizing: border-box; /* Para o preenchimento lateral funcionar */
 }
 
 body {
@@ -23,16 +23,16 @@ header {
 
 /* Container do Logo e Nome */
 .empresa {
-    padding: 0 1.5vw;
+    padding: 0 20px;
     display: flex;
     align-items: center;
-    margin-bottom: 2vw;
+    margin-bottom: 30px;
 }
 
 .logo {
-    width: 80px;
+    width: 60px;
     height: auto;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .espcs-empresa h1 {
@@ -41,6 +41,7 @@ header {
 
 .espcs-empresa p, .espcs-empresa h3{
     font-size: 0.9rem;
+    color: #666;
 }
 
 
@@ -90,6 +91,8 @@ header {
     background-color: #e2defe;
     width: 100%;
     display: block;
+    border-right: 4px solid #6c5ce7;
+    color: #6c5ce7 !important;
 }
 
 .abas-ativo a {
