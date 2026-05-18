@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexo - Creche</title>
+
+    <link rel="shortcut icon" href="/professor/img/logo-nexo-icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="minhasturmas.css">
+</head>
+
+<body>
+    <header>
+        <div class="empresa">
+            <img src="/professor/img/logo-nexo-header.png" alt="Logo da Nexo Creche" class="logo">
+            <div class="espcs-empresa">
+                <h1>MIS</h1>
+                <p><strong>Mind International School</strong></p>
+                <p>Gestão Escolar</p>
+            </div>
+        </div>
+        <div class="menu">
+            <h3>Menu</h3>
+            <ul class="menu-lista">
+                <li class="abas">
+                    <a href="/professor/inicio/inicio.html">
+                        <p>Início</p>
+                    </a>
+                </li>
+
+                <li class="abas">
+                    <div class="abas-ativo">
+                        <a href="#">
+                            <p>Minhas Turmas</p>
+                            <i class="bi bi-chevron-down seta"></i>
+                        </a>
+                        <ul class="turmas">
+                            <li>
+                                <a href="#">Berçário I</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="abas">
+                    <a href="#">
+                        <p>Agenda Diária</p>
+                        <i class="bi bi-chevron-down seta"></i>
+                    </a>
+                    <ul class="turmas">
+                        <li>
+                            <a href="/professor/agendadiaria/agendadiaria.html">Berçário I</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="abas">
+                    <a href="#">
+                        <p>Ocorrências</p>
+                    </a>
+                </li>
+
+                <li class="abas">
+                    <a href="#">
+                        <p>Mensagens</p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="tipo-usuario">
+            <div class="conteudo-usuario">
+                <div class="iniciais-usuario">
+                    <p>MS</p>
+                </div>
+                <div class="informacoes-usuario">
+                    <p class="nome-usuario">Maria Silva</p>
+                    <p class="funcao-usuario">Professora</p>
+                </div>
+                <a href="/professor/login/login.html" class="icone-sair">
+                    <i class="bi bi-box-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 class="como-esta-o-dia-turma">Veja como está o dia no Berçário I</h1>
+        <div class="alerta">
+            <i class="bi bi-exclamation-triangle"></i>
+            <strong class="titulo-alerta">Febre - Pedro Henrique</strong>
+            <p class="texto-alerta">Pedro apresentou febre de 38,2°C às 14:20. Foi medicado conforme autorização.</p>
+        </div>
+
+        <div class="box-informacoes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm box">
+                        <div class="conteudo-box">
+                            <p class="nome-da-box">Crianças</p>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="icone-crianca">
+                                <rect width="40" height="40" rx="10" fill="#E2DEFE" />
+                                <path
+                                    d="M31.685 11.7873C32.7951 13.4013 33.5605 15.2269 33.9333 17.15C34.4687 17.4093 34.9203 17.8142 35.2362 18.3182C35.5521 18.8223 35.7197 19.4051 35.7197 20C35.7197 20.5949 35.5521 21.1777 35.2362 21.6818C34.9203 22.1858 34.4687 22.5907 33.9333 22.85C33.2498 26.038 31.4937 28.8952 28.958 30.9448C26.4223 32.9945 23.2605 34.1126 20 34.1126C16.7396 34.1126 13.5777 32.9945 11.042 30.9448C8.50634 28.8952 6.75022 26.038 6.06668 22.85C5.53129 22.5907 5.07977 22.1858 4.76383 21.6818C4.4479 21.1777 4.28033 20.5949 4.28033 20C4.28033 19.4051 4.4479 18.8223 4.76383 18.3182C5.07977 17.8142 5.53129 17.4093 6.06668 17.15C6.7226 13.9366 8.46685 11.0479 11.0051 8.97108C13.5434 6.89429 16.7204 5.75662 20 5.75C23.1667 5.75 25.5417 7.49167 25.5417 9.70833C25.5417 11.925 24.1167 13.6667 22.375 13.6667C21.1083 13.6667 20 13.0333 20 12.0833M15.25 20H15.2658"
+                                    stroke="#5513D8" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M16.8334 26.3333C17.625 26.8083 18.7334 27.125 20 27.125C21.2667 27.125 22.375 26.8083 23.1667 26.3333M24.75 20C24.7562 20 24.7659 20 24.7659 20"
+                                    stroke="#5513D8" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <p class="numeros-box">6</p>
+                        <p class="informacoes-adicionais-box">Berçário I</p>
+                    </div>
+                    <div class="col-sm box">
+                        <div class="conteudo-box">
+                            <p class="nome-da-box">Presentes</p>
+                            <i class="bi bi-check-circle icone icone-presenca"></i>
+                        </div>
+                        <p class="numeros-box">5</p>
+                        <div class="informacoes-adicionais-box">
+                            <p class="dia">Hoje</p>
+                            <p class="data-box" style="font-size: 14px;">15/05/2026</p>
+                        </div>
+
+                    </div>
+                    <div class="col-sm box">
+                        <div class="conteudo-box">
+                            <p class="nome-da-box">Refeições Registradas</p>
+                            <i class="bi bi-fork-knife icone icone-refeicao"></i>
+                        </div>
+                        <p class="numeros-box">5</p>
+                        <div class="informacoes-adicionais-box">
+                            <p class="dia">Hoje</p>
+                        </div>
+                    </div>
+                    <div class="col-sm box">
+                        <div class="conteudo-box">
+                            <p class="nome-da-box">Ocorrências</p>
+                            <i class="bi bi-exclamation-triangle icone icone-ocorrencia"></i>
+                        </div>
+                        <p class="numeros-box">1</p>
+                        <div class="informacoes-adicionais-box">
+                            <p class="dia">Hoje</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="titulo-nome-turma">Berçário I</h3>
+        <select class="form-select pesquisa" aria-label="Default select example">
+            <option selected>Procurar Aluno</option>
+            <option value="1">Adriel Germano</option>
+            <option value="2">Alan Dias</option>
+            <option value="3">Arthur Corrêa</option>
+            <option value="4">Bruno Ramos</option>
+            <option value="5">Camylla Sousa</option>
+            <option value="5">Carla Fonseca</option>
+        </select>
+        <div class="alunos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm box-crianca">
+                        <div class="conteudo-box-crianca">
+                            <div class="iniciais-crianca">
+                                <p>AG</p>
+                            </div>
+                            <div class="escritas-crianca">
+                                <p class="nome-da-crianca">Adriel Germano</p>
+                                <p class="informacoes-adicionais-box">Entrada 07:45</p>
+                            </div>
+                            <div class="icones-info-criancas">
+                                <i class="bi bi-fork-knife icone icone-refeicao-alunos"></i>
+                                <i class="bi bi-moon icone icone-lua-alunos"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm box-crianca">
+                        <div class="conteudo-box-crianca">
+                            <div class="iniciais-crianca">
+                                <p>AD</p>
+                            </div>
+                            <div class="escritas-crianca">
+                                <p class="nome-da-crianca">Alan Dias</p>
+                                <p class="informacoes-adicionais-box">Entrada 08:00</p>
+                            </div>
+                            <div class="icones-info-criancas">
+                                <i class="bi bi-fork-knife icone icone-refeicao-alunos"></i>
+                                <i class="bi bi-moon icone icone-lua-alunos"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm box-crianca">
+                        <div class="conteudo-box-crianca">
+                            <div class="iniciais-crianca">
+                                <p>AC</p>
+                            </div>
+                            <div class="escritas-crianca">
+                                <p class="nome-da-crianca">Arthur Corrêa</p>
+                                <p class="informacoes-adicionais-box">Entrada 07:30</p>
+                            </div>
+                            <div class="icones-info-criancas">
+                                <i class="bi bi-fork-knife icone icone-refeicao-alunos"></i>
+                                <i class="bi bi-moon icone icone-lua-alunos"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm box-crianca">
+                        <div class="conteudo-box-crianca">
+                            <div class="iniciais-crianca">
+                                <p>BR</p>
+                            </div>
+                            <div class="escritas-crianca">
+                                <p class="nome-da-crianca">Bruno Ramos</p>
+                                <p class="informacoes-adicionais-box">Entrada 08:00</p>
+                            </div>
+                            <div class="icones-info-criancas">
+                                <i class="bi bi-fork-knife icone icone-refeicao-alunos"></i>
+                                <i class="bi bi-moon icone icone-lua-alunos"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm box-crianca">
+                        <div class="conteudo-box-crianca">
+                            <div class="iniciais-crianca">
+                                <p>CS</p>
+                            </div>
+                            <div class="escritas-crianca">
+                                <p class="nome-da-crianca">Camylla Sousa</p>
+                                <p class="informacoes-adicionais-box">Entrada 07:35</p>
+                            </div>
+                            <div class="icones-info-criancas">
+                                <i class="bi bi-fork-knife icone icone-refeicao-alunos"></i>
+                                <i class="bi bi-moon icone icone-lua-alunos"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm box-crianca">
+                        <div class="conteudo-box-crianca">
+                            <div class="iniciais-crianca">
+                                <p>CF</p>
+                            </div>
+                            <div class="escritas-crianca">
+                                <p class="nome-da-crianca">Carla Fonseca</p>
+                                <p class="informacoes-adicionais-box">Entrada --:--</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

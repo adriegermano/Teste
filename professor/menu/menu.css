@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box; /* Para o preenchimento lateral funcionar */
+}
+
+body {
+    background-color: #f3f1f5;
+}
+
+header {
+    background-color: white;
+    width: 22vw;
+    min-width: 180px; 
+    max-width: 340px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vw; /* Padding apenas no topo */
+}
+
+/* Container do Logo e Nome */
+.empresa {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 65px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.espcs-empresa h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1px;
+    font-weight: 700;
+}
+
+.espcs-empresa p{
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.espcs-empresa h1, .empresa-empresa p{
+    margin: 0; /* Remove as margens que o Bootstrap injeta */
+    padding: 0;
+}
+
+/* Menu */
+.menu {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.menu h3 {
+    padding: 0 10px;
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.menu-lista{
+    list-style-type: none;
+    width: 100%;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.menu-lista p{
+    margin-bottom: 0;
+}
+
+.abas {
+    width: 100%;
+}
+
+/* O segredo para ocupar tudo e alinhar a seta */
+.abas a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Texto na esquerda, Seta na direita */
+    padding: 12px 20px; /* O preenchimento lateral fica aqui */
+    width: 100%;
+    transition: 0.3s;
+}
+
+
+.abas:hover {
+    background-color: #575757;
+}
+
+.abas:hover a {
+    color: white;
+}
+
+/* Classe Ativa ocupando toda a largura */
+.abas-ativo {
+    background-color: #e2defe;
+    width: 100%;
+    display: block;
+    border-right: 4px solid #6c5ce7;
+    color: #6c5ce7 !important;
+}
+
+.abas-ativo a {
+    text-decoration: none;
+    color: black !important;
+    display: flex;
+    justify-content: space-between; /* Texto na esquerda, Seta na direita */
+    transition: 0.3s;
+    padding: 12px 20px;
+}
+
+/* Seta ajustada dentro do Flexbox */
+.seta {
+    margin-bottom: 0.5rem;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0; /* Impede a seta de amassar */
+}
+
+.turmas {
+    display: none; /*Para não aparecer automático*/
+    background-color: #f9f9f9;
+    list-style: none;
+    padding-left: 0; /* Recuo para parecer subitem */
+}
+
+.turmas li a {
+    padding: 10px 20px 10px 40px;
+    font-size: 0.85rem;
+    color: #555 !important;
+}
+
+.turmas:hover{
+    background-color: #8b8b8b;
+    transition: 0.3s;
+}
+
+.turmas:hover a{
+    color: white !important;
+}
+
+/*Quando passar o mouse na aba pai, mostra o submenu das turmas*/
+.abas:hover .turmas {
+    display: block;
+}
+
+.abas-ativo:hover .turmas {
+    display: block;
+}
+
+/*Gira a seta automaticamente quando o submenu das turmas abrir */
+.abas:hover .seta, 
+.abas.active .seta {
+    transform: rotate(180deg); /*Rotaciona a seta em 180 graus*/
+}
+
+.abas-ativo:hover .seta, 
+.abas.active .seta {
+    transform: rotate(180deg); /*Rotaciona a seta em 180 graus*/
+}
+
+.tipo-usuario{
+    margin-top: auto;
+}
+
+.conteudo-usuario{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding: 15px;
+}
+
+.iniciais-usuario{
+    background-color: #d9d9d9;
+    margin-left: 0px;
+    margin-right: 0;
+    margin-top: 15px;
+    padding-top: 21px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    color:#5512d7;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+
+.informacoes-usuario{
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    margin-left: 0;
+    padding-top: 5px;
+}
+
+.nome-usuario{
+    font-weight: 700;
+    margin: 0;
+    padding: 0 15px 0 15px;
+    margin-top: 15px;
+}
+
+.funcao-usuario{
+    font-weight: 300;
+    font-size: 14px;
+    padding-left: 15px;
+    margin-bottom: 2px;
+}
+
+.icone-sair{
+    margin: 25px 20px auto auto;
+    font-size: 30px;
+    flex-shrink: 0;
+    color: black;
+}
+
+
+/*PARTE DO MAIN - Todo o conteúdo*/
+
+main{
+    margin-left: clamp(180px, 22vw, 340px); /*Faz com que o conteúdo se movimente para o lado de forma proporcional ao tamanho da tela --> clamp(valor-mínimo, valor-ideal, valor-máximo)*/
+}
