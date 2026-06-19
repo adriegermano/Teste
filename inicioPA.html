@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexo Creche - Área dos Pais</title>
+
+    <link rel="shortcut icon" href="logo-nexo-icon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="pais.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="mensagemPA.css">
+</head>
+
+<body class="pagina-pais-inicio">
+
+    <button class="menu-toggle" aria-label="Abrir menu">
+        <i class="bi bi-list"></i>
+    </button>
+
+    <!-- MENU LATERAL -->
+    <header class="menu-pais">
+
+        <div class="empresa-pais">
+            <img src="logo-nexo-header.png" alt="Logo da Nexo Creche" class="logo-pais">
+
+            <div class="dados-empresa-pais">
+                <h1>MIS</h1>
+                <p><strong>Mind International School</strong></p>
+                <p>Gestão Escolar</p>
+            </div>
+        </div>
+
+        <nav class="nav-pais menu-container">
+            <input type="checkbox" id="menu-toggle">
+
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="lista-menu-pais menu-links">
+
+                <li class="item-menu-pais menu-pais-inicio">
+                    <a href="#">
+                        <span>
+                            <i class="bi bi-house-door"></i>
+                            Início
+                        </span>
+                    </a>
+                </li>
+
+                <li class="item-menu-pais menu-pais-historico">
+                    <a href="historicoPA.html">
+                        <span>
+                            <i class="bi bi-book"></i>
+                            Histórico
+                        </span>
+                    </a>
+                </li>
+
+                <li class="item-menu-pais menu-pais-mensagens">
+                    <a href="mensagemPA.html">
+                        <span>
+                            <i class="bi bi-chat-left"></i>
+                            Mensagens
+                        </span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="usuario-pais">
+            <div class="conteudo-usuario-pais">
+
+                <div class="iniciais-usuario-pais">
+                    JV
+                </div>
+
+                <div class="dados-usuario-pais">
+                    <p class="nome-usuario-pais">Joana Vieira</p>
+                    <p class="funcao-usuario-pais">Responsável</p>
+                </div>
+
+                <a href="index.html" class="icone-sair-pais" title="Sair">
+                    <i class="bi bi-box-arrow-right"></i>
+                </a>
+
+            </div>
+        </div>
+
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main class="conteudo-pais">
+
+        <div class="notificacao-container">
+            <a href="#" class="icone-mensagem-pais" id="btn-mensagens">
+                <i class="bi bi-envelope"></i>
+                <span class="badge">1</span> <!-- número de mensagens -->
+            </a>
+
+            <div class="dropdown-mensagens">
+                <h4>Mensagens</h4>
+
+                <ul>
+                    <li class="mensagem-item">
+                        <span class="mensagem-remetente">Ana Costa...</span>
+                        <span class="mensagem-preview">Informamos que a reuni...</span>
+                        <span class="mensagem-hora">07:30</span>
+                    </li>
+
+                    <li class="mensagem-item">
+                        <span class="mensagem-remetente">Joana Vieira</span>
+                        <span class="mensagem-preview">Bom dia Joana! Ok, vam...</span>
+                        <span class="mensagem-hora">07:30</span>
+                    </li>
+                </ul>
+
+                <a href="mensagemPA.html" class="ver-todas">Ver todas as mensagens</a>
+            </div>
+        </div>
+
+        <section class="topo-pais">
+            <h1>Joana,</h1>
+            <p>Veja como está o dia do Pedro Henrique</p>
+        </section>
+
+        <section class="alerta-pais">
+            <i class="bi bi-exclamation-triangle"></i>
+            <strong class="titulo-alerta">Febre - Pedro Henrique</strong>
+            <p class="texto-alerta">
+                Pedro apresentou febre de 38,2°C às 14:20. Foi medicado conforme autorização.
+            </p>
+        </section>
+
+        <section class="cartao-crianca-pais">
+
+            <div class="avatar-crianca-pais">
+                PH
+            </div>
+
+            <div class="info-crianca-pais">
+                <h2>Pedro Henrique</h2>
+                <p>Berçário II - Integral</p>
+
+                <div class="humor-pais">
+                    <i class="bi bi-emoji-frown"></i>
+
+                    <div>
+                        <strong>Humor</strong>
+                        <span>Retraído</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-pais">
+
+                <div class="status-item-pais status-presente">
+                    <i class="bi bi-emoji-smile"></i>
+                    <span>Presente</span>
+                </div>
+
+                <div class="status-item-pais status-comeu">
+                    <i class="bi bi-fork-knife"></i>
+                    <span>Comeu</span>
+                </div>
+
+                <div class="status-item-pais status-dormiu">
+                    <i class="bi bi-moon"></i>
+                    <span>Dormiu</span>
+                </div>
+
+                <div class="status-item-pais status-banho">
+                    <i class="bi bi-droplet"></i>
+                    <span>Banho</span>
+                </div>
+
+                <div class="status-item-pais status-febre">
+                    <i class="bi bi-exclamation-triangle"></i>
+                    <span>Febre</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="painel-dia-pais">
+
+            <aside class="linha-tempo-pais">
+                <h2>Linha do Tempo</h2>
+
+                <div class="evento-pais">
+                    <i class="bi bi-clock"></i>
+                    <div>
+                        <strong>Chegou à escola</strong>
+                        <span>07:30</span>
+                    </div>
+                </div>
+
+                <div class="evento-pais evento-refeicao">
+                    <i class="bi bi-fork-knife"></i>
+                    <div>
+                        <strong>Café da manhã</strong>
+                        <span>08:30</span>
+                    </div>
+                </div>
+
+                <div class="evento-pais evento-sono">
+                    <i class="bi bi-moon"></i>
+                    <div>
+                        <strong>Soneca da manhã</strong>
+                        <span>09:30 - 10:30</span>
+                    </div>
+                </div>
+
+                <div class="evento-pais evento-banho">
+                    <i class="bi bi-droplet"></i>
+                    <div>
+                        <strong>Banho</strong>
+                        <span>11:00</span>
+                    </div>
+                </div>
+
+                <div class="evento-pais evento-refeicao">
+                    <i class="bi bi-fork-knife"></i>
+                    <div>
+                        <strong>Almoço</strong>
+                        <span>12:00</span>
+                    </div>
+                </div>
+
+                <div class="evento-pais evento-sono">
+                    <i class="bi bi-moon"></i>
+                    <div>
+                        <strong>Soneca</strong>
+                        <span>13:00 - 14:00</span>
+                    </div>
+                </div>
+
+                <div class="evento-pais evento-febre">
+                    <i class="bi bi-exclamation-triangle"></i>
+                    <div>
+                        <strong>Febre</strong>
+                        <span>14:20</span>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="coluna-informacoes-pais">
+
+                <article class="bloco-info-pais">
+                    <h3>Ocorrências:</h3>
+
+                    <div class="caixa-texto-pais">
+                        <p>
+                            Pedro Henrique apresentou febre de 38.2°C às 10:45. Foi medicado conforme orientação da
+                            responsável.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="bloco-info-pais">
+                    <h3>Observações da Professora:</h3>
+
+                    <div class="caixa-texto-pais">
+                        <p>
+                            Em decorrência do estado febril, Pedro encontra-se mais quieto e desanimado.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+    <script src="mensagem.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexo Creche - Área dos Pais</title>
+
+    <link rel="shortcut icon" href="logo-nexo-icon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="pais.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body class="pagina-pais-historico">
+
+    <button class="menu-toggle" aria-label="Abrir menu">
+        <i class="bi bi-list"></i>
+    </button>
+
+    <!-- MENU LATERAL -->
+    <header class="menu-pais">
+
+        <div class="empresa-pais">
+            <img src="logo-nexo-header.png" alt="Logo da Nexo Creche" class="logo-pais">
+
+            <div class="dados-empresa-pais">
+                <h1>MIS</h1>
+                <p><strong>Mind International School</strong></p>
+                <p>Gestão Escolar</p>
+            </div>
+        </div>
+
+        <nav class="nav-pais menu-container">
+            <input type="checkbox" id="menu-toggle">
+
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="lista-menu-pais menu-links">
+
+                <li class="item-menu-pais menu-pais-inicio">
+                    <a href="inicioPA.html">
+                        <span>
+                            <i class="bi bi-house-door"></i>
+                            Início
+                        </span>
+                    </a>
+                </li>
+
+                <li class="item-menu-pais menu-pais-historico">
+                    <a href="#">
+                        <span>
+                            <i class="bi bi-book"></i>
+                            Histórico
+                        </span>
+                    </a>
+                </li>
+
+                <li class="item-menu-pais menu-pais-mensagens">
+                    <a href="mensagemPA.html">
+                        <span>
+                            <i class="bi bi-chat-left"></i>
+                            Mensagens
+                        </span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="usuario-pais">
+            <div class="conteudo-usuario-pais">
+
+                <div class="iniciais-usuario-pais">
+                    JV
+                </div>
+
+                <div class="dados-usuario-pais">
+                    <p class="nome-usuario-pais">Joana Vieira</p>
+                    <p class="funcao-usuario-pais">Responsável</p>
+                </div>
+
+                <a href="index.html" class="icone-sair-pais" title="Sair">
+                    <i class="bi bi-box-arrow-right"></i>
+                </a>
+
+            </div>
+        </div>
+
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main class="conteudo-pais">
+
+        <section class="topo-historico-pais">
+
+            <div>
+                <h1>Histórico</h1>
+                <p>Registros de Pedro Henrique</p>
+            </div>
+
+            <div class="data-historico-pais">
+                <span id="textoData">13/04/2026</span>
+                <i class="bi bi-calendar4-week"></i>
+                <input type="date" id="calendarioPais" class="input-calendario-pais">
+            </div>
+
+        </section>
+
+        <section class="lista-historico-pais">
+
+            <!-- HOJE -->
+            <article class="dia-historico-pais">
+
+                <div class="cabecalho-dia-pais">
+                    <i class="bi bi-calendar"></i>
+                    <h2>Hoje</h2>
+                </div>
+
+                <div class="card-historico-pais">
+
+                    <div class="linha-superior-historico">
+
+                        <div class="evento-resumo-pais">
+                            <strong>Chegou à escola</strong>
+                            <span>07:30</span>
+                        </div>
+
+                        <div class="evento-resumo-pais evento-febre-historico">
+                            <i class="bi bi-exclamation-triangle"></i>
+                            <div>
+                                <strong>Febre</strong>
+                                <span>14:20</span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="seta-historico-pais">
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="linha-eventos-historico">
+
+                        <div class="item-evento-historico refeicao">
+                            <i class="bi bi-fork-knife"></i>
+                            <div>
+                                <strong>Café da manhã</strong>
+                                <span>08:30</span>
+                            </div>
+                        </div>
+
+                        <div class="item-evento-historico sono">
+                            <i class="bi bi-moon"></i>
+                            <div>
+                                <strong>Soneca da manhã</strong>
+                                <span>09:30 - 10:30</span>
+                            </div>
+                        </div>
+
+                        <div class="item-evento-historico banho">
+                            <i class="bi bi-droplet"></i>
+                            <div>
+                                <strong>Banho</strong>
+                                <span>11:00</span>
+                            </div>
+                        </div>
+
+                        <div class="item-evento-historico refeicao">
+                            <i class="bi bi-fork-knife"></i>
+                            <div>
+                                <strong>Almoço</strong>
+                                <span>12:00</span>
+                            </div>
+                        </div>
+
+                        <div class="item-evento-historico sono">
+                            <i class="bi bi-moon"></i>
+                            <div>
+                                <strong>Soneca</strong>
+                                <span>13:00 - 14:00</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+            <hr>
+            <!-- ONTEM -->
+            <article class="dia-historico-pais">
+                <div class="cabecalho-dia-pais">
+                    <i class="bi bi-calendar"></i>
+                    <h2>Ontem</h2>
+                </div>
+
+                <div class="card-historico-pais">
+
+                    <div class="linha-superior-historico">
+
+                        <div class="evento-resumo-pais">
+                            <strong>Chegou à escola</strong>
+                            <span>07:30</span>
+                        </div>
+
+                        <a href="#" class="seta-historico-pais">
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="linha-eventos-historico">
+
+                        <div class="item-evento-historico refeicao">
+                            <i class="bi bi-fork-knife"></i>
+                            <div>
+                                <strong>Café da manhã</strong>
+                                <span>08:30</span>
+                            </div>
+                        </div>
+
+                        <div class="item-evento-historico sono">
+                            <i class="bi bi-moon"></i>
+                            <div>
+                                <strong>Soneca da manhã</strong>
+                                <span>09:30 - 10:30</span>
+                            </div>
+                        </div>
+
+                        <div class="item-evento-historico banho">
+                            <i class="bi bi-droplet"></i>
+                            <div>
+                                <strong>Banho</strong>
+                                <span>11:00</span>
+                            </div>
+                        </div>
+
+                        <div class="item-evento-historico refeicao">
+                            <i class="bi bi-fork-knife"></i>
+                            <div>
+                                <strong>Almoço</strong>
+                                <span>12:00</span>
+                            </div>
+                        </div>
+
+                        <div class="item-evento-historico sono">
+                            <i class="bi bi-moon"></i>
+                            <div>
+                                <strong>Soneca</strong>
+                                <span>13:00 - 14:00</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+            <hr>
+        </section>
+
+    </main>
+    <script src="calendario.js"></script>
+    <script src="mensagem.js"></script>
+</body>
+
+</html>
