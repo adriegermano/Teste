@@ -1,0 +1,74 @@
+/* Container principal do menu */
+.menu-container {
+    position: relative;
+    background: #f3f1f5;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Esconde o checkbox original */
+#menu-toggle {
+    display: none;
+}
+
+/* Estilização do ícone do sanduíche */
+.menu-icon {
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-icon span {
+    width: 100%;
+    height: 4px;
+    background-color: #5513d8;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Animação do sanduíche para "X" (quando aberto) */
+#menu-toggle:checked ~ .menu-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu-toggle:checked ~ .menu-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked ~ .menu-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -9px);
+}
+
+/* Lista de links (Escondida por padrão) */
+.menu-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #f3f1f5;
+    width: 200px;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Mostra os links quando o checkbox está marcado */
+#menu-toggle:checked ~ .menu-links {
+    display: block;
+}
+
+/* Estilos dos links */
+.menu-links li a {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu-links li a:hover {
+    background-color: #fff;
+}
